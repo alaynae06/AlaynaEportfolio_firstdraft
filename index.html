@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang = "en">
+<link rel="stylesheet" href="style.css">
+<head>
+    <title>Alayna Edwards Portfolio</title>
+    <style>
+            body {
+                background-image: url('flowerlines.jpg');
+                background-size:cover;
+                background-attachment: scroll;
+                background-color: white;
+            }
+    </style>
+    <div class="header">
+        <h1>--- Alayna Edwards Portfolio ---</h1>
+        <h2>Computer Science Undergraduate at University of Central Florida</h2>
+    </div>
+</head>
+<body>
+    <div class = "content">
+
+        <div class = "about-box">
+            <img src = "limbitless_headshot.jpg" alt = "Picture of me" class = "image-left" width ="200"> 
+            <h2>About Me</h2>
+            <p>
+            I am a Sophomore Computer Science Undergraduate at University of Central Florida. I'm currently interning at Limbitless 
+            Solutions on the Computer Science and Web Development team. I first got into computers in 2020, when I researched and built my own gaming computer
+            from scratch. From there, I played around with different programming languages like Python and Java, and started coding my own projects.
+            This led to my love of computers and programming and is why I decided to pursue Computer Science for my Bachelor's degree. 
+            </p>
+
+            <h3>Contact Details</h3>
+
+            <a href="mailto:alaynae06@gmail.com">alaynae06@gmail.com</a>
+
+            <a href="https://github.com/alaynae06">GitHub</a>
+
+            <a href="https://www.linkedin.com/in/alaynaedwards/">LinkedIn</a>
+
+        </div>
+
+        <h1 class = "title-box">--- Education ---</h1>
+
+        <div class="container">
+    
+            <div class = "box">
+            <h3>University of Central Florida - B.A., Computer Science</h3>
+            <p>Orlando, FL</p>
+            <p>June 2024 - December 2027</p>
+            </div>
+
+            <div class = "box">
+            <h3>St. Johns River State College - A.A.</h3>
+            <p>St. Augustine, FL</p>
+            <p>August 2022 - April 2024</p>
+            </div>
+
+        </div>
+
+        <h1 class = "title-box">--- Experience ---</h1>
+
+        <div class="container">
+
+            <div class = "box">
+                <h3>Limbitless Solutions Inc. - Assistant Scholar</h3>
+                <p>Orlando, FL</p>
+                <p>Januray 2026 - present</p>
+            </div>
+
+            <div class = "box">
+                <h3>Jefferson Recreation Center - Counselor</h3>
+                <p>Jefferson, GA</p>
+                <p>September 2023 - December 2025</p>
+            </div>
+        </div>
+
+        <div class = "centered-box">
+            <h3>St. Augustine Aquarium - Cashier</h3>
+            <p>St. Augustine, FL</p>
+            <p>June 2022 - February 2023</p>
+        </div>
+
+        <h1 class = "title-box">--- Projects ---</h1>
+
+        <div class = "container">
+            <div class = "box">
+                <h3>PantryPal - Front-End Developer</h3>
+                <p>November 2025</p>
+                <a href="https://pantrypalgwc.streamlit.app">Try it out here!</a>
+                <p> 
+                    A group project done through GirlsWhoCode at UCF. <span id = "dots">...</span>
+                    <span id="more">We were tasked with making a project in a month. My group decided to create a recipe finder we called PantryPal. I utilized Python and Streamlit to create the Front-End of 
+                    the web app, I designed the entire site as well as helped to design the mascot. I also assisted with connecting the Back-End Algorithm
+                    with the design I created. </span>
+                </p>
+
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+
+                <script>
+                    function myFunction() {
+                    var dots = document.getElementById("dots");
+                    var moreText = document.getElementById("more");
+                    var btnText = document.getElementById("myBtn");
+
+                    if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Read more"; 
+                        moreText.style.display = "none";
+                    } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read less"; 
+                        moreText.style.display = "inline";
+                    }
+                }
+                </script>
+            </div>
+
+            <div class = "box">
+            <h3>Project Kestrel Drone - Developer</h3>
+            <p>August 2024 - January 2025</p>
+            <p>
+                I worked with a group to help decide the parts that would go along with the drone.<span id="dots2">...</span> <span id="more2"> I helped to mix the AI and algorithm smoothly.
+                We designed our own AI program and Machine Learning Model to track a given target with the drone without getting lost or damaged. 
+                This meant the drone was able to detect objects around it and manuever around them as well as track and film the given target at
+                a safe distance. We utilized Python, C++, Verilog, TensorFlow, Numpy, Pillow, OpenCV and GitHub.</span> 
+            </p>
+
+            <button onclick="myFunction2()" id="myBtn2">Read more</button>
+
+                <script>
+                    function myFunction2() {
+                    var dots = document.getElementById("dots2");
+                    var moreText = document.getElementById("more2");
+                    var btnText = document.getElementById("myBtn2");
+
+                    if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Read more"; 
+                        moreText.style.display = "none";
+                    } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read less"; 
+                        moreText.style.display = "inline";
+                    }
+                }
+                </script>
+            </div>
+        </div>
+
+        <div class = "centered-box">
+            <h3>OnLife Mobile Development - Developer</h3>
+            <p>August 2024 - January 2025</p>
+            <p>I was working with a large group to help code for a startup called Onlife. We utilized Flutter, Dart, and JavaScript.</p>
+        </div>
+
+        <h1 class = "title-box">--- Skills ---</h1>
+
+        <div class = "container">
+            <div class = "skills-box">
+                <h3>Programming Languages</h3>
+                <img class = "skills-images" src = "JS_logo.png" alt = "JavaScript Logo">
+                <img class = "skills-images" src = "HTML_logo.png" alt = "HTML logo">
+                <img class = "skills-images" src = "CSS_logo.PNG" alt = "CSS logo">
+                <img class = "skills-images" src = "python_logo.png" alt = "Python logo">
+                <img class = "skills-images" src="C_programming_Language.svg" alt="C logo">
+                <img class = "skills-images" src="Java_logo.svg" alt="Java logo">
+            </div>
+
+            <div class = "skills-box">
+                <h3>Developer tools</h3>
+                <img class = "skills-images" src = "git_logo.png" alt = "Git logo">
+                <img class = "skills-images" src = "github_logo.svg" alt = "GitHub logo">
+                <img class = "skills-images" src = "vscode-logo.png" alt = "VScode logo">
+                <img class = "skills-images" src = "nodejs-logo.webp" alt = "NodeJs logo">
+            </div>
+        </div>
+
+    </div>
+    
+    <script>import { initializeApp } from "firebase/app";</script>
+    <script>
+        const firebaseConfig = {
+    apiKey: "AIzaSyAWwqI4Kz5gGsWYVGsJTV7_g4eva3239Y4",
+    authDomain: "portfolio-e4ac4.firebaseapp.com",
+    projectId: "portfolio-e4ac4",
+    storageBucket: "portfolio-e4ac4.firebasestorage.app",
+    messagingSenderId: "362889693801",
+    appId: "1:362889693801:web:b50e6cb91e55772f04b0f8"
+    };
+    </script>
+    <script>const app = initializeApp(firebaseConfig);</script>
+</body>
+</html>
